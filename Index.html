@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>NJPhotography</title>
+    <style>
+    header{
+        background: url(img/street.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height:500px;
+      }
+    }
+
+    .carousel{
+      min-height:700px !important;
+    }
+    
+    #preloader{
+      height:100vh;
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    #preloader img{
+      height: auto;
+      width:auto;
+    }
+    #text-justify{
+      text-align: justify;
+    }
+    </style>
+</head>
+<body onload="stopPreloader();">
+
+    <div id="preloader">
+      <img src="img/831.gif" alt="">
+      <h4>Loading...</h4>
+    </div>
+
+  <!-- navbar -->
+    <header id="scrollup" class="scrollspy">
+      <nav class="nav-wrapper transparent">
+      <div class="container">
+      <a href="#" class="brand-logo">NJPhotography</a>
+      <a href="" class="sidenav-trigger" data-target="mobile-menu">
+      <i class="material-icons">menu</i>
+      </a>  
+      <ul class="right hide-on-med-and-down">
+      <li><a href="#gallery">Photo Gallery</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <ul class="sidenav grey lighten-2" id="mobile-menu">
+      <li><a href="#gallery">Photo Gallery</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      </div>
+      </nav>
+    </header>
+  
+  <!--Photo Gallery -->
+
+    <div class="container scrollspy " id="gallery">
+      <h3 class="black-text center">Photo Gallery</h3>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <img src="img/a.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/b.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/c.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/d.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/e.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/f.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/i.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/j.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/k.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/l.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/m.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+        <div class="col s12 m6 l3">
+          <img src="img/n.jpg" alt="" class="responsive-img card materialbox hoverable">
+        </div>
+      </div>
+    </div>
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/lens.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- Services -->
+    <div class="container-wrapper scrollspy" id="services">
+      <h3 class="black-text center">Our Services</h3>
+        <div class="row">
+          <div class="col s12 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="img/pre-wedding.jpg" alt="" class="materialbox">
+                <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>
+                </a>
+              </div>
+            <div class="card-content ">
+              <div class="card-title">Pre-Wedding</div>
+              <p id="text-justify">Pre-wedding shoot is a huge trend and it's not fading away soon. What's tricky is to land up a photographer who can bring out the essence of a couple's love with minimum props and poses and maximum candid.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">More Details</a>
+            </div>
+            </div>
+          </div>
+          <div class="col s12 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="img/wedding.jpg" alt="" class="materialbox">
+                <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>
+                </a>
+              </div>
+            <div class="card-content">
+              <div class="card-title">Wedding</div>
+              <p id="text-justify">Wedding photography is a specialty in photography that is primarily focused on the photography of events and activities relating to weddings.This style often involves more innovative and dramatic post-processing of images.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">More Details</a>
+            </div>
+            </div>
+          </div>
+        
+          <div class="col s12 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="img/birthday.jpg" alt="" class="materialbox">
+                <a href="#" class="halfway-fab btn-floating pink pulse">
+                <i class="material-icons">favorite</i>
+                </a>
+              </div>
+            <div class="card-content">
+              <div class="card-title">Birthday Parties</div>
+              <p id="text-justify">Our talented team of birthday photographers aim to capture the joy and excitement of your special moments without you even noticing us. Happiness is in seeing the joy sparkle in you kids eye.</p>
+            </div>
+            <div class="card-action">
+            <a href="#">More Details</a>
+            </div>
+            </div>
+          </div>
+        
+          
+        </div>
+    </div>
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/camera.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <section class="container-wrapper section scrollspy" id="about">
+    <div class="row">
+    <div class="col s12 l6">
+        <div class="container">
+          <h4 class="black-text">About Us</h4>
+          <p id="text-justify">Photography is the result of combining several technical discoveries, relating to seeing an image and capturing the image.</p>
+         
+          <p id="text-justify">The birth of photography was then concerned with inventing means to capture and keep the image produced by the camera obscura.Photography is the art of capturing light with a camera. </p>
+        </div>
+    </div>
+
+    <div class="col s12 l5">
+      <ul class="tabs">
+        <li class="tab col 6">
+           <a href="#indoor" class="pink-text">Indoor Shot</a>
+         </li>
+         <li class="tab col 6">
+           <a href="#outdoor" class="pink-text">Outdoor Shot</a>
+         </li>
+       </ul>
+       <div class="col s12" id="indoor">
+         <p class="flow-text black-text">Indoor Shot</p>
+         <p id="text-justify">Indoor photography refers to photos taken indoors: be it portrait photography, real estate photography, or product photography. It can also include artistic projects, such as still life photography or photojournalistic images.</p>
+         <p id="text-justify">Look though these creative indoor photography ideas to get unique photos. Start taking unusual photos of ordinary things following these indoor photo ideas.</p>
+       </div>
+       <div class="col s12" id="outdoor">
+         <p class="flow-text black-text">Outdoor Shot</p>
+         <p id="text-justify">Outdoor Photographer is the ultimate guide to nature, wildlife, travel and adventure sports photography, featuring the work of renown photographers.</p>
+         <p id="text-justify">Find the latest outdoor photography tips and techniques from Outdoor Photographer to help you master landscape, wildlife, and nature photography.</p>
+       </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/photo.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <!-- contact form -->
+  <div class="section container scrollspy" id="contact">
+    <div class="row">
+      <div class="col s12 l5">
+        <h4 class="black-text">Get In Touch</h4>
+        <img src="img/logo.jpg" alt="" class="responsive-img">
+        <p id="text-justify">Professional International award winning portrait and headshot photographer based in Penrith.</p>
+        <p id="text-justify">For portraits, tell me a little about your family, your favourite things/places so we can make sure we get the best photos that tell your families story.</p>
+      </div>
+      <div class="col s12 l5 offset-l2">
+        <h4 class="black-text">Contact Us</h4>
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email">
+            <label for="email">Your Email</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">message</i>
+            <textarea  id="message" class="materialize-textarea"></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">event_note</i>
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+          <div class="input-field">
+            <p>Services Requied...</p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Photography</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox">
+                <span>Editing</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Scrollup Btn-->
+
+  <div class="fixed-action-btn">
+      <a href="#scrollup" class="btn-floating btn-large pink pulse"><i class="material-icons">keyboard_arrow_up</i></a>
+    
+    </div>
+
+  <!-- footer -->
+    
+    <footer class="page-footer grey darken-3">
+      <div class="container center text-center">
+        <a href="#" class="btn-floating btn-small blue darken-4">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="btn-floating btn-small pink darken-1">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="btn-floating btn-small blue text-lighten-3">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="footer-copyright text-center">
+          <div class="container center-align">
+              &copy Powered by NJPhotography || 2020
+          </div>
+      </div>
+  </footer>
+
+  
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.materialbox').materialbox();
+      $('.datepicker').datepicker({
+        disableWeeksnds: true
+      });
+      $('.scrollspy').scrollSpy();
+      $('.fixed-action-btn').floatingActionButton();
+    });
+    
+  </script>
+
+  <script>
+    var preloaderDisplay=document.getElementById('preloader');
+    function stopPreloader(){
+      preloaderDisplay.style.display="none";
+    }
+  </script>
+</body>
+</html>
